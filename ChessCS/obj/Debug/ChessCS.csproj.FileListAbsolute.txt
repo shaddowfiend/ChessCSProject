@@ -1,0 +1,7 @@
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\obj\Debug\ChessCS.csproj.AssemblyReference.cache
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\obj\Debug\ChessCS.csproj.CoreCompileInputs.cache
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\bin\Debug\ChessCS.exe.config
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\bin\Debug\ChessCS.exe
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\bin\Debug\ChessCS.pdb
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\obj\Debug\ChessCS.exe
+C:\Users\betrayed\source\repos\ChessCS\ChessCS\obj\Debug\ChessCS.pdb
