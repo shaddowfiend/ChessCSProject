@@ -8,8 +8,12 @@ namespace ChessCS
         public static int End = 0; // 0 = not check | 1 = check | 2 = check + mate
         public MoveIn(string move)
         {
-            string pattern = @"m\. ";
-            string[] moves = Regex.Split(move, pattern);
+            
+            if () 
+            {
+                string patternPawn = @"m p.";
+                string[] moves = Regex.Split(move, patternPawn);
+            }
 
         }
     }
