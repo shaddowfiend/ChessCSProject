@@ -16,17 +16,6 @@ namespace ChessCS
             {
                 MoveIn move = new MoveIn(MoveIn = Console.ReadLine());
             }
-
-
-
-
-          /*  if (stop1 == "move")
-            {
-                ctable.table[1, 3] = ChessTable.Empty;
-                ctable.table[3, 3] = ChessTable.Pawn;
-                Console.Clear();
-                ctable.TableShow();
-            }  */  
         }
     }
 }
