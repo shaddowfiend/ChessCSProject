@@ -9,16 +9,34 @@ namespace ChessCS
         public MoveIn(string move)
         {
             string patternPawn = @"m p.*";
-            string[] moves = Regex.Split(move, patternPawn);
+            string patternKnight = @"m N.*";
+            string patternBishop = @"m B.*";
+            string patternRook = @"m R.*";
+            string patternQueen = @"m Q.*";
+            string patternKing = @"m K.*";
+            
+            Regex regexPawn = new Regex(patternPawn);
+            Regex regexKnight = new Regex(patternKnight);
+            Regex regexBishop = new Regex(patternBishop);
+            Regex regexRook = new Regex(patternRook);
+            Regex regexQueen = new Regex(patternQueen);
+            Regex regexKing = new Regex(patternKing);
 
-            Regex regex = new Regex(patternPawn);
-            Match matchpawn = regex.Match(move);
+            /*string[] varPawn = Regex.Split(move, patternPawn);
+            string[] varKnight = Regex.Split(move, patternKnight);
+            string[] varBishop = Regex.Split(move, patternBishop);
+            string[] varRook = Regex.Split(move, patternRook);
+            string[] varQueen = Regex.Split(move, patternQueen);
+            string[] varKing = Regex.Split(move, patternKing);*/
 
-            if (matchpawn.Success)
-            {
-                Console.WriteLine("Correct pattern " + matchpawn.Value);
-            }
-            string moved = matchpawn.Value;
+            Match matchPawn = regexPawn.Match(move);
+            Match matchKnight = regexKnight.Match(move);
+            Match matchBishop = regexBishop.Match(move);
+            Match matchRook = regexRook.Match(move);
+            Match matchQueen = regexQueen.Match(move);
+            Match matchKing = regexKing.Match(move);
+
+            
         }
     }
 }
