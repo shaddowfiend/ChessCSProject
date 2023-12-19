@@ -9,12 +9,16 @@
         public static string Queen = " |Q| ";
         public static string King = " |K| ";
         public static string Empty = "  0  ";
-
+        
+        public int Row { get; set; }
+        public int Col { get; set; }
         public string Name { get; private set; }
 
-        public Figures(string name)
+        public Figures(string name, int row, int col)
         {
             Name = name;
+            Row = row;
+            Col = col;
         }
 
         public override string ToString()

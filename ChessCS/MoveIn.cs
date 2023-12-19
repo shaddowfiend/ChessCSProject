@@ -30,13 +30,33 @@ namespace ChessCS
             Match matchRook = regexRook.Match(Convert.ToString(move));
             Match matchQueen = regexQueen.Match(Convert.ToString(move));
             Match matchKing = regexKing.Match(Convert.ToString(move));
-            while (true)
+            /*while (true)
             {
                 if (matchPawn.Success)
                 {
                     Control control = new Control(matchPawn.Value);
                 }
-            }
+                if (matchKnight.Success)
+                {
+                    Control control = new Control(matchKnight.Value);
+                }
+                if (matchBishop.Success)
+                {
+                    Control control = new Control(matchBishop.Value);
+                }
+                if (matchRook.Success)
+                {
+                    Control control = new Control(matchRook.Value);
+                }
+                if (matchQueen.Success)
+                {
+                    Control control = new Control(matchQueen.Value);
+                }
+                if (matchKing.Success)
+                {
+                    Control control = new Control(matchKing.Value);
+                }
+            }*/
         }
     }
 }
