@@ -9,12 +9,14 @@ namespace ChessCS
         {
             Console.OutputEncoding = Encoding.UTF8;
             ChessTable ctable = new ChessTable();
-            ctable.TableShow();
+            
 
-            string MoveIn; 
-            while(ChessCS.MoveIn.End == 0 || ChessCS.MoveIn.End == 1)
+            string MoveIn;
+            while (ChessCS.MoveIn.End == 0 || ChessCS.MoveIn.End == 1)
             {
+                ctable.TableShow();
                 MoveIn move = new MoveIn(MoveIn = Console.ReadLine());
+                Console.Clear();
             }
         }
     }

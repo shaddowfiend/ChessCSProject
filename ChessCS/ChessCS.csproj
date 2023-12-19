@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Attack.cs" />
     <Compile Include="ChessTable.cs" />
+    <Compile Include="Control.cs" />
     <Compile Include="Figures.cs" />
     <Compile Include="MoveIn.cs" />
     <Compile Include="Program.cs" />

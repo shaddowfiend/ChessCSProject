@@ -8,35 +8,35 @@ namespace ChessCS
         public static int End = 0; // 0 = not check | 1 = check | 2 = check + mate
         public MoveIn(string move)
         {
-            string patternPawn = @"m p.*";
-            string patternKnight = @"m N.*";
-            string patternBishop = @"m B.*";
-            string patternRook = @"m R.*";
-            string patternQueen = @"m Q.*";
-            string patternKing = @"m K.*";
-            
-            Regex regexPawn = new Regex(patternPawn);
-            Regex regexKnight = new Regex(patternKnight);
-            Regex regexBishop = new Regex(patternBishop);
-            Regex regexRook = new Regex(patternRook);
-            Regex regexQueen = new Regex(patternQueen);
-            Regex regexKing = new Regex(patternKing);
+            string[] patterns = { @"m p.*", @"m N.*", @"m B.*", @"m R.*", @"m Q.*", @"m K.*" };
 
-            /*string[] varPawn = Regex.Split(move, patternPawn);
-            string[] varKnight = Regex.Split(move, patternKnight);
-            string[] varBishop = Regex.Split(move, patternBishop);
-            string[] varRook = Regex.Split(move, patternRook);
-            string[] varQueen = Regex.Split(move, patternQueen);
-            string[] varKing = Regex.Split(move, patternKing);*/
+            Regex regexPawn = new Regex(patterns[0]);
+            Regex regexKnight = new Regex(patterns[1]);
+            Regex regexBishop = new Regex(patterns[2]);
+            Regex regexRook = new Regex(patterns[3]);
+            Regex regexQueen = new Regex(patterns[4]);
+            Regex regexKing = new Regex(patterns[5]);
 
-            Match matchPawn = regexPawn.Match(move);
-            Match matchKnight = regexKnight.Match(move);
-            Match matchBishop = regexBishop.Match(move);
-            Match matchRook = regexRook.Match(move);
-            Match matchQueen = regexQueen.Match(move);
-            Match matchKing = regexKing.Match(move);
-
-            
+           /* string[] varPawn = Regex.Split(Convert.ToString(move), patterns[0]);
+            string[] varKnight = Regex.Split(move, patterns[1]);
+            string[] varBishop = Regex.Split(move, patterns[2]);
+            string[] varRook = Regex.Split(move, patterns[3]);
+            string[] varQueen = Regex.Split(move, patterns[4]);
+            string[] varKing = Regex.Split(move, patterns[5]);*/
+           
+            Match matchPawn = regexPawn.Match(Convert.ToString(move));
+            Match matchKnight = regexKnight.Match(Convert.ToString(move));
+            Match matchBishop = regexBishop.Match(Convert.ToString(move));
+            Match matchRook = regexRook.Match(Convert.ToString(move));
+            Match matchQueen = regexQueen.Match(Convert.ToString(move));
+            Match matchKing = regexKing.Match(Convert.ToString(move));
+            while (true)
+            {
+                if (matchPawn.Success)
+                {
+                    Control control = new Control(matchPawn.Value);
+                }
+            }
         }
     }
 }
